@@ -13,8 +13,7 @@ export async function getAllHosts(filters = {}) {
     where: {
       ...(name && { 
         name: {
-          contains: name,
-          mode: 'insensitive'
+          contains: name
         }
       }),
     },

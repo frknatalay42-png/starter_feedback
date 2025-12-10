@@ -11,8 +11,7 @@ export async function getAllProperties(filters = {}) {
   // Location filter - partial match
   if (location) {
     where.location = {
-      contains: location,
-      mode: 'insensitive'
+      contains: location
     };
   }
   
